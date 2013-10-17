@@ -5,9 +5,9 @@
   <div class="container">
     <div class="sixteen columns" style="padding-top: 30px;">
       <a href id="linktohomepage" "http://anthonyocole.com/index.html">
-      <h1>DataGram</h1>
+      <h1>Datalytics</h1>
       </a>
-      <h4>Social Media Analytics can be fun!</h4>
+      <h4>Sign-up</h4>
       <h4><nav align="right">
         <ul>
           <li>
@@ -16,6 +16,7 @@
             <a id="linktologin" href="/login.php">Login</a>&nbsp;&nbsp;
             <a id="linktoemail" href="mailto:Anthony.cole0001@gmail.com" target= "_blank">Contact</a>&nbsp;&nbsp;
             <a id="linktorblog" href="blog.dwa15-csci-aoc.com">Blog</a>
+          </li>
           </li>
         </ul>       
       </nav></h4> 
@@ -54,9 +55,7 @@
                                   </div>
                                   <span class="error"></span>
                                   <button type="submit" class="btn btn-green" tabindex="6">Create my account</button>
-                                  <br \>
-                                  <br \>
-                                  <small>By clicking create account, you are agreeing to the <a href="/terms-of-use" target="_blank">DataGram Terms of Service</a>.</small>
+                                  <small>By clicking create account, you are agreeing to the <a href="/terms-of-use" target="_blank">Datalytics Terms of Service</a>.</small>
                                 </form>
                             </div>
                              <div class="phone pull-left col-lg-5">

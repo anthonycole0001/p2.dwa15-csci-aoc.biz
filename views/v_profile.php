@@ -1,4 +1,10 @@
 
+<?php if(isset(user_name)): ?>
+	<h1>This is the profile for <?=user_name?></h1>
+<?php else: ?>
+	<h1>No user has been specified</h1>
+
+
   <!-- Primary Page Layout
   ================================================== -->
 
@@ -7,7 +13,7 @@
       <a href id="linktohomepage" "http://anthonyocole.com/index.html">
       <h1>DataGram</h1>
       </a>
-      <h4>Social Media Analytics can be fun!</h4>
+      <h4>About Us</h4>
       <h4><nav align="right">
         <ul>
           <li>
@@ -17,12 +23,12 @@
             <a id="linktoemail" href="mailto:Anthony.cole0001@gmail.com" target= "_blank">Contact</a>&nbsp;&nbsp;
             <a id="linktorblog" href="blog.dwa15-csci-aoc.com">Blog</a>
           </li>
+          </li>
         </ul>       
       </nav></h4> 
       <hr />
       <br \>
          </div>
-
 <div class="content">
             <header>
                 <div class="container">
@@ -54,8 +60,6 @@
                                   </div>
                                   <span class="error"></span>
                                   <button type="submit" class="btn btn-green" tabindex="6">Create my account</button>
-                                  <br \>
-                                  <br \>
                                   <small>By clicking create account, you are agreeing to the <a href="/terms-of-use" target="_blank">DataGram Terms of Service</a>.</small>
                                 </form>
                             </div>

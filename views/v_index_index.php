@@ -1,70 +1,53 @@
+<!DOCTYPE html>
+
+<?php if(isset($login)): ?>
+        <h1>The user is not logged-in, please login?></h1>
+            <?php else: ?>
+        <h1>This is the login page, please login</h1>
+<?php endif; ?>
+
+<?php if(isset($logout)): ?>
+        <h1>You are now logged out of the system?></h1>
+<?php endif; ?>
 
   <!-- Primary Page Layout
   ================================================== -->
 
-  <div class="container">
-    <div class="sixteen columns" style="padding-top: 30px;">
-      <a href id="linktohomepage" "http://anthonyocole.com/index.html">
-      <h1>DataGram</h1>
-      </a>
-      <h4>Social Media Analytics can be fun!</h4>
-      <h4><nav align="right">
-        <ul>
-          <li>
-            <a id="linktoaboutus" href="/aboutus.php">About Us</a>&nbsp;&nbsp;
-            <a id="linktosignup" href="/signup.php">Sign-up</a>&nbsp;&nbsp;
-            <a id="linktologin" href="/login.php">Login</a>&nbsp;&nbsp;
-            <a id="linktoemail" href="mailto:Anthony.cole0001@gmail.com" target= "_blank">Contact</a>&nbsp;&nbsp;
-            <a id="linktorblog" href="blog.dwa15-csci-aoc.com">Blog</a>
-          </li>
-        </ul>       
-      </nav></h4> 
-      <hr />
-      <br \>
-         </div>
 
-<div class="content">
-            <header>
-                <div class="container">
-                        <div class="login">
-                            <div class="signup-form col-lg-6 pull-left">
-                                <h3><b>Create your account</b></h3>
-                                <p>&nbsp;</p>
-                                <form role="form" action="/signup" method="post" id="signUpForm" autocomplete="off">
-                                <input type="hidden" name="from" value="home">
-                                  <div class="form-group">
-                                    <input type="text" class="form-control" id="inputFullName" placeholder="Full name" name="name" tabindex="1">
-                                    <img class="error" src="/img/check_red.png" alt=""/>
-                                    <img class="check" src="/img/check_green.png" alt="" />
-                                  </div>
-                                  <div class="form-group">
-                                    <input type="text" class="form-control" id="inputCompany" placeholder="Company" name="company" tabindex="2">
-                                    <img class="error" src="/img/check_red.png" alt="" />
-                                    <img class="check" src="/img/check_green.png" alt="" />
-                                  </div>
-                                  <div class="form-group">
-                                    <input type="email" class="form-control" id="inputEmail" placeholder="Email" name="email" tabindex="3">
-                                    <img class="error" src="/img/check_red.png" alt="" />
-                                    <img class="check" src="/img/check_green.png" alt="" />
-                                  </div>
-                                  <div class="form-group">
-                                    <input type="password" class="form-control" id="inputPassword" placeholder="Password" name="password" tabindex="4">
-                                    <img class="error" src="/img/check_red.png" alt="" />
-                                    <img class="check" src="/img/check_green.png" alt="" />
-                                  </div>
-                                  <span class="error"></span>
-                                  <button type="submit" class="btn btn-green" tabindex="6">Create my account</button>
-                                  <br \>
-                                  <br \>
-                                  <small>By clicking create account, you are agreeing to the <a href="/terms-of-use" target="_blank">DataGram Terms of Service</a>.</small>
-                                </form>
-                            </div>
-                             <div class="phone pull-left col-lg-5">
-                                <img src="/images/dashboard.png" alt="Social Analytics Dashboard">
-                            </div>
-                        </div>
-                    </div>
-                </header>
-        </div>
-        </body>
+
+	<!-- Start Page Content -->
+	<div class="container">
+		<div class="jumbotron">
+				  <h1>Welcome!</h1>
+					<p>
+						Datagram is a simple micro-blogging platform. If you do not have an account, please sign up for one. 
+						If you already have an account, please login.  If you are interested in learning which friends of 
+						yours are using the app, please browse through the user profiles and comments.
+					</p>
+					<br />
+					<p>
+						<a data-toggle="modal" href="/index/signup" class="btn btn-primary btn-lg"><i class="icon-lock">Sign Up &raquo;</a>
+						<a data-toggle="modal" href="/index/login" class="btn btn-primary btn-lg"<i class="icon-lock">Log In &raquo;</a>
+					</p>
+		</div>
+	</div>
+
+<!-- Start Search -->
+
+	<div class="container">
+		<div class="well">
+				<form method="GET" class="form-inline" action="/search/posts/">
+					<input name="query" class="form-control input-lg" placeholder="Search Through DataGram...."></input>
+				</form>
+		</div>
+	</div>
+
+<!-- End Search -->
+
+    <br />
+    <br />
+    <hr>
+    <br />
+
+
 </html>

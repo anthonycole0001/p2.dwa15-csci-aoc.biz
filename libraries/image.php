@@ -2,6 +2,7 @@
 # Classes are defined with the keyword "class"
 class Image {
 
+
     /*
     Class properties
     Encapsulation:

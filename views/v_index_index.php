@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 
-<?php if(isset($login)): ?>
+<!--<?php if(isset($login)): ?>
         <h1>The user is not logged-in, please login?></h1>
             <?php else: ?>
         <h1>This is the login page, please login</h1>
-<?php endif; ?>
+<?php endif; ?>-->
 
 <?php if(isset($logout)): ?>
         <h1>You are now logged out of the system?></h1>
@@ -26,8 +26,8 @@
 					</p>
 					<br />
 					<p>
-						<a data-toggle="modal" href="/index/signup" class="btn btn-primary btn-lg"><i class="icon-lock">Sign Up &raquo;</a>
-						<a data-toggle="modal" href="/index/login" class="btn btn-primary btn-lg"<i class="icon-lock">Log In &raquo;</a>
+						<a data-toggle="modal" href="/users/signup" class="btn btn-primary btn-lg"><i class="icon-lock">Sign Up &raquo;</a>
+						<a data-toggle="modal" href="/users/login" class="btn btn-primary btn-lg"<i class="icon-lock">Log In &raquo;</a>
 					</p>
 		</div>
 	</div>

@@ -7,14 +7,13 @@ class search_controller extends base_controller{
 
     } 
 
-	public function singleS() {
-		 if ($singleS == TRUE)
+	public function singleVar() {
         
         //echo "This is the single variable search page";
 
     	# Any method that loads a view will commonly start with this
         # First, set the content of the template with a view file
-        $this->template->content = View::instance('v_search_singleS');
+        $this->template->content = View::instance('v_search_singleVar');
 
         # Now set the <title> tag
         $this->template->title = "Search Single Variable";
@@ -43,19 +42,18 @@ class search_controller extends base_controller{
         $this->template->client_files_body = Utils::load_client_files($client_files_body); 
 
         # Now pass the content to the view
-        $this->template->content->search_singleS = $search_singleS;
+        $this->template->content->search_singleS = $search_singleVar;
 
         # Render the view
             echo $this->template;
     }
 
+
     public function multipleS() {
-        if (singleS == TRUE)
-        //echo "This is the multi variable search page";
 
         # Any method that loads a view will commonly start with this
         # First, set the content of the template with a view file
-        $this->template->content = View::instance('v_search_multipleS');
+        $this->template->content = View::instance('v_search_multipleVar');
 
         # Now set the <title> tag
         $this->template->title = "Search Multiple Variables";
@@ -84,7 +82,7 @@ class search_controller extends base_controller{
         $this->template->client_files_body = Utils::load_client_files($client_files_body); 
 
         # Now pass the content to the view
-        $this->template->content->search_singleS = $search_singleS;
+        $this->template->content->search_singleS = $search_multipleVar;
 
         # Render the view
             echo $this->template;

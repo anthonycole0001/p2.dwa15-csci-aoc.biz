@@ -30,11 +30,24 @@
 		  	</div>
 		  	<div class="navbar-collapse collapse">
 				<ul class="nav navbar-nav">
+					
+					<?php if($user): ?>
 					<li class="active"><a id="linktohomepage" href="/index">Home</a></li>
 					<li><a id="linktoaboutus" href="/index/aboutus">About Us</a></li>
-					<li><a id="linktosignup" href="/index/signup">Sign Up</a></li>
-					<li><a id="linktologin" href="/index/login">Log In</a></li>
+					<li><a id="linktoprofile" href="/users/profile">Profile</a></li>
+        			<li><a id="linktodashboard" href="/users/dashboard">Dashboard</a></li>
+        			<li><a id="linktologout" href='/users/logout'>Logout</a></li>
 					<li><a id="linktohelp" href="/index/help">Help</a></li>
+
+
+					<!-- Menu options for users who are not logged in -->
+        			<?php else: ?>
+					<li class="active"><a id="linktohomepage" href="/index">Home</a></li>
+					<li><a id="linktoaboutus" href="/index/aboutus">About Us</a></li>
+					<li><a id="linktosignup" href="/users/signup">Sign Up</a></li>
+					<li><a id="linktologin" href="/users/login">Log In</a></li>
+					<li><a id="linktohelp" href="/index/help">Help</a></li>
+    			    <?php endif; ?>
 
 				</ul>
 				<br />

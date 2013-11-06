@@ -27,7 +27,8 @@
     	'/' => '/index',     # default controller when "/" is requested
     	'/profile' => '/profile',
     	'/signup' => '/signup',
-    	'/users' => '/users',  	
+    	'/users' => '/users',
+    	'/login'  => '/login',
     );
     
 # Match requested uri to any routes and instantiate controller

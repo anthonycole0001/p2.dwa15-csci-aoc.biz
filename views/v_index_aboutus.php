@@ -31,7 +31,7 @@
                                     
                                 <li>View Posts</li>
                                     <p>User can view the posts made by other users that they are following.</p>
-                               
+
                             </ul>
                         <br />
                         <h1 class="list-group-item-heading">Bonus Features</h1>

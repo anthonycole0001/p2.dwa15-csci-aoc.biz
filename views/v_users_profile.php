@@ -1,10 +1,5 @@
 <!DOCTYPE html>
 
-<?php if(isset($user_name)): ?>
-    <h2>This is the profile for <?=$user_name?></h2>
-<?php else: ?>
-    <h2>No user has been specified, please login</h2>
-<?php endif; ?>
 
 
   <!-- Primary Page Layout
@@ -21,9 +16,17 @@
                         <div class="edit-photo"><a href=" "></a>
                         </div>
                     </div>
-    
-
-                </div>
+                    <section>
+                        <aside>
+                            <ul class="side-nav">
+                                <li><a href="#">Account Settings</a></li>
+                                <li><a href="#">Social</a></li>
+                                <li><a href="#">Reset Password</a></li>
+                                <li><a href="#">Privacy</a></li>
+                            </ul>
+                        </aside>
+                    </section>
+                    
 
             </div>
         </div>

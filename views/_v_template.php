@@ -35,7 +35,9 @@
 					<li class="active"><a id="linktohomepage" href="/index">Home</a></li>
 					<li><a id="linktoaboutus" href="/index/aboutus">About Us</a></li>
 					<li><a id="linktoprofile" href="/users/profile">Profile</a></li>
-        			<li><a id="linktodashboard" href="/users/dashboard">Dashboard</a></li>
+					<li><a id="linktomakeapost" href="/posts/add">Make Posts</a></li>&nbsp;
+					<li><a id="linktomyposts" href="/posts/index">My Post</a></li>&nbsp;
+        			<li><a id="linktodashboard" href="/posts/users">Followers</a></li>
         			<li><a id="linktologout" href='/users/logout'>Logout</a></li>
 					<li><a id="linktohelp" href="/index/help">Help</a></li>
 

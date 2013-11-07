@@ -3,7 +3,7 @@
 <?php if(isset($login)): ?>
         <h1>The user is not logged-in, please login?></h1>
             <?php else: ?>
-        <h1>Welcome to the DataGram Dashboard</h1>
+        <h1>Follow favorite comments!</h1>
 <?php endif; ?>
 
 <?php if(isset($logout)): ?>

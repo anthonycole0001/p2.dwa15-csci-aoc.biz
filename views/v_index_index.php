@@ -1,13 +1,9 @@
 <!DOCTYPE html>
 
-<!--<?php if(isset($login)): ?>
-        <h1>The user is not logged-in, please login?></h1>
+<?php if($user): ?>
+        <h1>Hello <?=$user->first_name;?></h1>
             <?php else: ?>
-        <h1>This is the login page, please login</h1>
-<?php endif; ?>-->
-
-<?php if(isset($logout)): ?>
-        <h1>You are now logged out of the system?></h1>
+        <h1>Please sign up or login</h1>
 <?php endif; ?>
 
   <!-- Primary Page Layout
@@ -32,17 +28,7 @@
 		</div>
 	</div>
 
-<!-- Start Search -->
 
-	<div class="container">
-		<div class="well">
-				<form method="GET" class="form-inline" action="/search/posts/">
-					<input name="query" class="form-control input-lg" placeholder="Search Through DataGram...."></input>
-				</form>
-		</div>
-	</div>
-
-<!-- End Search -->
 
     <br />
     <br />
